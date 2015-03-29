@@ -1,6 +1,6 @@
 # ES6 Starter Template
 
-This is a simple little starting template for an ES6 project, using:
+This is a simple little starting template for an ES6 (a.k.a. EcmaScript 2015) project, using:
 
  * React
  * Babel
