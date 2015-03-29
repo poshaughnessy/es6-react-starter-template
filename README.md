@@ -1,4 +1,4 @@
-# Starter Template for ES6 + React + Babel + Browserify + Gulp
+# ES6 Starter Template
 
 This is a simple little starting template for an ES6 project, using:
 
