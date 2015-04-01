@@ -9,7 +9,7 @@
   "author": "Peter O'Shaughnessy <peter.oshaughnessy@gmail.com> (http://www.peteroshaughnessy.com)",
   "license": "MIT",
   "scripts": {
-    "start": "node runServer"
+    "start": "node --harmony runServer"
   },
   "devDependencies": {
     "gulp-babel": "~4.0.0",
