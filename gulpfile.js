@@ -10,25 +10,42 @@ require('babel/register');
 Object.getPrototypeOf.toString = function() {return Object.toString();};
 
 var gulp = require('gulp'),
+    babel = require('gulp-babel'),
     concat = require('gulp-concat'),
+    rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    browserify = require('browserify'),
+    uglify = require('gulp-uglify'),
     babelify = require('babelify'),
+    browserify = require('browserify'),
     fs = require('fs'),
+    source = require('vinyl-source-stream'),
     server = require('./server');
 
 /**
  *  Transpile and concatenate the JavaScripts into dist/bundle.js
  */
-gulp.task('babelify', function() {
+gulp.task('babel', function() {
 
-    browserify({ debug: true })
+    return browserify('./src/main.js', { debug: false })
         .transform(babelify)
-        .require('./src/main.js', { entry: true })
         .bundle()
         .on('error', function (err) { console.log('Babelify error : ' + err.message); })
         .pipe(fs.createWriteStream('./dist/bundle.js'));
+
+});
+
+/**
+ * Minify the bundle JS. Currently unused but would be required for production!
+ */
+gulp.task('uglify', ['babel'], function() {
+
+    return gulp.src('./dist/bundle.js')
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(rename('bundle.min.js'))
+        .pipe(gulp.dest('./dist'));
 
 });
 
@@ -49,22 +66,21 @@ gulp.task('sass', function() {
 /**
  * Compile JS and SCSS
  */
-gulp.task('compile', ['babelify', 'sass'], function() {
+gulp.task('compile', ['babel', 'sass'], function() {
 });
 
-
 /**
- * Watch for changes and re-compile
+ * Compile and watch for changes
  */
-gulp.task('watch', function() {
-    gulp.watch('./src/**/*.js', ['babelify']);
+gulp.task('watch', ['compile'], function() {
+    gulp.watch('./src/**/*.js', ['babel']);
     gulp.watch('./styles/*.scss', ['sass']);
 });
 
 /**
- * Compile, then start the server
+ * Compile and start watching, then start the server
  */
-gulp.task('server', ['compile','watch'], function() {
+gulp.task('server', ['watch'], function() {
     server.start();
 });
 
