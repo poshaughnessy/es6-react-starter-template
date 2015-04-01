@@ -9,7 +9,7 @@
   "author": "Peter O'Shaughnessy <peter.oshaughnessy@gmail.com> (http://www.peteroshaughnessy.com)",
   "license": "MIT",
   "scripts": {
-    "start": "node --harmony runServer"
+    "start": "node runServer"
   },
   "devDependencies": {
     "gulp-babel": "~4.0.0",
@@ -17,7 +17,6 @@
     "gulp-concat": "~2.5.2",
     "gulp-sass": "~1.3.3",
     "gulp-sourcemaps": "~1.5.1",
-    "express": "~4.12.3",
     "babelify": "~5.0.4",
     "browserify": "~9.0.3",
     "module-deps": "~3.7.3",
@@ -26,6 +25,7 @@
   },
   "dependencies": {
     "babel": "^4.7.16",
+    "express": "~4.12.3",
     "react": "~0.13.1"
   },
   "engines" : {
