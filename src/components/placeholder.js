@@ -19,16 +19,13 @@ class Placeholder extends React.Component {
                 </ul>
 
                 <p>
-                    See the GitHub repository at:
-                    <a href="https://github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template">github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template</a>
+                    See the GitHub repository at: <a href="https://github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template">github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template</a>
                 </p>
 
                 <p>Feel free to fork, copy or use however you like.</p>
 
                 <p>
-                    Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or 
-                    <a href="http://twitter.com/poshaughnessy">Twitter</a> if you have any
-                    comments/suggestions/questions.
+                    Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or <a href="http://twitter.com/poshaughnessy">Twitter</a> if you have any                     comments/suggestions/questions.
                 </p>
 
                 <p>Peter O'Shaughnessy</p>
