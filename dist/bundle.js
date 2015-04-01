@@ -5,9 +5,9 @@ var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["defau
 
 var React = _interopRequire(require("react"));
 
-var PlaceholderComponent = _interopRequire(require("./components/placeholder"));
+var Placeholder = _interopRequire(require("./components/placeholder"));
 
-React.render(React.createElement(PlaceholderComponent, { history: true }), document.getElementById("app"));
+React.render(React.createElement(Placeholder, { history: true }), document.getElementById("app"));
 
 },{"./components/placeholder":158,"react":157}],2:[function(require,module,exports){
 // shim for using process in browser
@@ -19756,11 +19756,6 @@ var Placeholder = (function (_React$Component) {
                 return React.createElement(
                     "div",
                     null,
-                    React.createElement(
-                        "h2",
-                        null,
-                        "Hello! Test 3"
-                    ),
                     React.createElement(
                         "p",
                         null,

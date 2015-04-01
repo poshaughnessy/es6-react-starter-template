@@ -19,7 +19,6 @@ var gulp = require('gulp'),
     babelify = require('babelify'),
     browserify = require('browserify'),
     fs = require('fs'),
-    source = require('vinyl-source-stream'),
     server = require('./server');
 
 /**
