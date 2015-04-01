@@ -18,12 +18,20 @@ class Placeholder extends React.Component {
                     <li><a href="http://expressjs.com/">Express</a></li>
                 </ul>
 
+                <p>
+                    See the GitHub repository at:
+                    <a href="https://github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template">github.com/poshaughnessy/es6-react-babel-browserify-gulp-starter-template</a>
+                </p>
+
                 <p>Feel free to fork, copy or use however you like.</p>
 
                 <p>
-                    Also please <a href="http://twitter.com/poshaughnessy">get in touch</a> if you have any
+                    Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or
+                    <a href="http://twitter.com/poshaughnessy">Twitter</a> if you have any
                     comments/suggestions/questions.
                 </p>
+
+                <p>Peter O'Shaughnessy</p>
             </div>
         );
     }
