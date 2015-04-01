@@ -28,7 +28,7 @@ class Placeholder extends React.Component {
                     Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or <a href="http://twitter.com/poshaughnessy">Twitter</a> if you have any                     comments/suggestions/questions.
                 </p>
 
-                <p>Peter O'Shaughnessy</p>
+                <p><em>Peter O'Shaughnessy</em></p>
             </div>
         );
     }
