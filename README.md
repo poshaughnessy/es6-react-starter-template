@@ -1,4 +1,4 @@
-# ES6 Starter Template
+# ES6 (EcmaScript 2015) Starter Template
 
 This is a simple little starting template for an ES6 (a.k.a. EcmaScript 2015) project, using:
 
@@ -8,14 +8,12 @@ This is a simple little starting template for an ES6 (a.k.a. EcmaScript 2015) pr
  * Babelify
  * Sass
  * Gulp
+ * Node
+ * Express
 
 ## Instructions
 
 Just type `gulp` to compile and run up the server - then fire up `localhost:8000` in the browser.
-
-Please note: only the front-end code is ES6 right now. The server isn't, because I'm waiting for
-Gulp v0.4. When that's released, I'll update `gulpfile.js` and `server.js` and and change the
-start script to add [the harmony flags](https://github.com/heroku-examples/node-harmony-example).
 
 Feel free to fork, copy or use however you like.
 

@@ -1,33 +1,25 @@
-/**
- * NB. This isn't ES6 yet!
- * That's because I'm waiting for Gulp v0.4 (see server.babel.js).
- */
-var express = require('express'),
-    app = express(),
+const express = require('express'),
+    path = require('path'),
     PORT = process.env.PORT || 8000;
 
-var Server = function() {
+let app = express();
 
-    this.startExpress = function() {
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-        app.use(express.static(__dirname));
+app.use( '/dist', express.static('dist') );
 
-        app.get('/', function(req, res) {
-            res.sendFile(__dirname + '/index.html');
-        });
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
+app.use((req, res) => {
+    res.status(404).send('Page not found');
+});
+
+export default {
+    start: function() {
         app.listen(PORT);
-
         console.log('Started server on port', PORT);
-
     }
-
 };
-
-var server = new Server();
-module.exports = server;
-
-// Command line usage: node server run
-if( process.argv[2] === 'run' ) {
-    server.startExpress();
-}
