@@ -3,8 +3,7 @@
  * https://github.com/gulpjs/gulp/issues/830
  */
 
-// Enable ES6 - this will make it automatically transpile required files
-// See: http://babeljs.io/docs/usage/require/
+// Enable ES6 - this will make it automatically transpile required files. See: http://babeljs.io/docs/usage/require/
 require('babel/register');
 
 // TEMP fix for this issue: https://github.com/babel/babel/issues/489
@@ -26,10 +25,10 @@ gulp.task('babelify', function() {
 
     browserify({ debug: true })
         .transform(babelify)
-        .require("./src/main.js", { entry: true })
+        .require('./src/main.js', { entry: true })
         .bundle()
-        .on("error", function (err) { console.log("Babelify error : " + err.message); })
-        .pipe(fs.createWriteStream("./dist/bundle.js"));
+        .on('error', function (err) { console.log('Babelify error : ' + err.message); })
+        .pipe(fs.createWriteStream('./dist/bundle.js'));
 
 });
 
