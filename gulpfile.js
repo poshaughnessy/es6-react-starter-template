@@ -48,6 +48,13 @@ gulp.task('sass', function() {
 });
 
 /**
+ * Compile JS and SCSS
+ */
+gulp.task('compile', ['babelify', 'sass'], function() {
+});
+
+
+/**
  * Watch for changes and re-compile
  */
 gulp.task('watch', function() {
@@ -58,7 +65,7 @@ gulp.task('watch', function() {
 /**
  * Compile, then start the server
  */
-gulp.task('server', ['babelify','sass','watch'], function() {
+gulp.task('server', ['compile','watch'], function() {
     server.start();
 });
 
