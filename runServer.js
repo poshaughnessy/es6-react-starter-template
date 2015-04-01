@@ -1,7 +1,10 @@
 /**
- * To run the server on the command line.
- * ES6, so use node v0.12.x or run with --harmony flag?
- */
-import './server.es6';
+* To run the server on the command line.
+*/
+
+// Enable ES6 - this will make it automatically transpile required files. See: http://babeljs.io/docs/usage/require/
+require('babel/register');
+
+var server = require('./server');
 
 server.start();
