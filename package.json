@@ -1,10 +1,10 @@
 {
-  "name": "project-maguire",
+  "name": "es6-react-starter-template",
   "version": "0.0.1",
-  "description": "Project Maguire",
+  "description": "A simple little ES6 (EcmaScript 2015) project template for React, Babel, Browserify and Gulp",
   "repository": {
     "type": "git",
-    "url": "ssh://git@devops-tools.pearson.com/ftp/project-maguire.git"
+    "url": "https://github.com/poshaughnessy/es6-react-starter-template.git"
   },
   "author": "Peter O'Shaughnessy <peter.oshaughnessy@gmail.com> (http://www.peteroshaughnessy.com)",
   "license": "MIT",
