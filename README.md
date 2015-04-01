@@ -1,4 +1,4 @@
-# ES6 (EcmaScript 2015) Starter Template
+# ES6 Starter Template
 
 This is a simple little starting template for an ES6 (a.k.a. EcmaScript 2015) project, using:
 
