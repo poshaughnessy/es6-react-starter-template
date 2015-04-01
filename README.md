@@ -26,7 +26,7 @@ Just let me know. Or feel free to go for it yourself!
 
 ## Contact
 
-Please [email me](peter.oshaughnessy@gmail.com) or [tweet me](http://twitter.com/poshaughnessy)
+Please [email me](mailto:peter.oshaughnessy@gmail.com) or [tweet me](http://twitter.com/poshaughnessy)
 if you have any comments/suggestions/questions.
 
 
