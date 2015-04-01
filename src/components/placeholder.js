@@ -26,7 +26,7 @@ class Placeholder extends React.Component {
                 <p>Feel free to fork, copy or use however you like.</p>
 
                 <p>
-                    Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or
+                    Also please get in touch via <a href="mailto:peter.oshaughnessy@gmail.com">email</a> or 
                     <a href="http://twitter.com/poshaughnessy">Twitter</a> if you have any
                     comments/suggestions/questions.
                 </p>
