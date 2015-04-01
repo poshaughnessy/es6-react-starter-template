@@ -13,7 +13,9 @@ This is a simple little starting template for an ES6 (a.k.a. EcmaScript 2015) pr
 
 ## Instructions
 
-Just type `gulp` to compile and run up the server - then fire up `localhost:8000` in the browser.
+Just do `npm install` and type `gulp` to compile and run up the server. Then load up `localhost:8000` in the browser.
+
+Gulp will watch for JS and SCSS changes and recompile, but it won't live-reload (I just prefer to Cmd+R).
 
 Feel free to fork, copy or use however you like.
 
