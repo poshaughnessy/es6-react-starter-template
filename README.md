@@ -17,16 +17,12 @@ Just do `npm install` and type `gulp` to compile and run up the server. Then loa
 
 Gulp will watch for JS and SCSS changes and recompile, but it won't live-reload (I just prefer to Cmd+R).
 
-Feel free to fork, copy or use however you like.
+## See also
 
-## Looking for an isomorphic version?
+This is one of a collection of three ES6 starter templates. The others are:
 
-See: [es6-react-isomorphic-starter-template](https://github.com/poshaughnessy/es6-react-isomorphic-starter-template).
-
-## Why no Yeoman Generator?
-
-I don't really use Yeoman, but if it would be useful for anyone, I could try making a Generator for this.
-Just let me know. Or feel free to go for it yourself!
+* [Isomorphic version](https://github.com/poshaughnessy/es6-react-isomorphic-starter-template)
+* [SystemJS version](https://github.com/poshaughnessy/es6-react-jspm-starter-template)
 
 ## Contact
 
